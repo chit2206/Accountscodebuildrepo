@@ -1,6 +1,12 @@
 version: 0.2
 
 phases:
+  install:
+    runtime-versions:
+      java: corretto17 # Use the required Java version
+    commands:
+      - echo "Ensuring gradlew is executable..."
+      - chmod +x ./gradlew
   pre_build:
     commands:
       - ./gradlew clean
