@@ -4,7 +4,7 @@ phases:
 
   pre_build:
     commands:
-      - echo "Ensuring gradlew is executable..."
+      - echo "Ensuring gradlew is executable now..."
       - chmod +x ./gradlew
       - ./gradlew clean build
       - echo Logging in to Amazon ECR...
