@@ -9,7 +9,7 @@ phases:
       - chmod +x ./gradlew
   pre_build:
     commands:
-      - ./gradlew clean
+      - ./gradlew clean build
       - echo Logging in to Amazon ECR...
       - aws --version
       - REPOSITORY_URI=536697269418.dkr.ecr.us-east-1.amazonaws.com/techarch/boarepo
