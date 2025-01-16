@@ -42,4 +42,4 @@ phases:
 artifacts:
   files:
     - imagedefinitions.json
-    - build/libs/accounts-ms.jar
+    - build/libs/*.jar
